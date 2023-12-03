@@ -1,3 +1,3 @@
 # TMFlix
 
-<a href="jatinmeh.github.io/TMFlix">Visit</a>
+visit jatinmeh.github.io/TMFlix
