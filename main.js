@@ -10,7 +10,7 @@ function redirectToMovie() {
 function fetchIMDbID() {
     const apiKey = '44991e20';
     const movieTitle = document.getElementById('movieTitle').value;
-    const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(movieTitle)}&apikey=${apiKey}`;
+    const apiUrl = `https://www.omdbapi.com/?t=${encodeURIComponent(movieTitle)}&apikey=${apiKey}`;
 
     fetch(apiUrl)
         .then(response => response.json())
@@ -29,19 +29,12 @@ function fetchIMDbID() {
 }
 
 function copyText() {
-    // Select the text in the result div
     var resultElement = document.getElementById('result');
     var range = document.createRange();
     range.selectNode(resultElement);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
-
-    // Copy the selected text to the clipboard
     document.execCommand('copy');
-
-    // Deselect the text
     window.getSelection().removeAllRanges();
-
-    // Alert the user that the text has been copied (you can also use a more user-friendly notification)
     alert('Text copied to clipboard!');
 }
