@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="movieIdInput">Enter Movie ID:</label>
+    <input type="text" id="movieIdInput" placeholder="Enter movie ID">
+
+    <button onclick="redirectToMovie()">Go to Movie</button>
+
+    <h4>IMDb ID Fetcher</h4>
+    
+    <label for="movieTitle">Enter Movie Title: </label>
+    <input type="text" id="movieTitle" placeholder="e.g., Cars">
+    <button onclick="fetchIMDbID()">Fetch IMDb ID</button>
+
+    <div id="result"></div>
+    <button onclick="copyText()">Copy Text</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
