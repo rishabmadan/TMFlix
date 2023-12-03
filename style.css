@@ -8,6 +8,10 @@ body {
    background-color: #f0f0f0;
    padding: 20px;
    text-align: center;
+   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.jpg);
+   background-size: cover;
+   background-position: center;
+   color: white;
 }
 
 label {
@@ -20,6 +24,7 @@ input {
    margin-bottom: 15px;
    width: 100%;
    box-sizing: border-box;
+   background-color: lightgrey;
 }
 
 button {
@@ -37,8 +42,9 @@ button:hover {
 #result {
    margin-top: 20px;
    padding: 10px;
-   background-color: #fff;
+   background-color: lightgrey;
    border-radius: 5px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
