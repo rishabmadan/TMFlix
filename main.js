@@ -7,8 +7,19 @@ function redirectToMovie() {
     window.open(movieUrl, '_blank');
 }
 
+function redirectToTv() {
+    const tvId = document.getElementById('tvIdInput').value;
+
+    const tvUrlTemplate = 'https://vidsrc.to/embed/tv/{id}';
+    const tvUrl = tvUrlTemplate.replace('{id}', tvId);
+
+    window.open(tvUrl, '_blank');
+}
+
+const omdbkey='44991e20'
+
 function fetchIMDbID() {
-    const apiKey = '44991e20';
+    const apiKey = omdbkey;
     const movieTitle = document.getElementById('movieTitle').value;
     const apiUrl = `https://www.omdbapi.com/?t=${encodeURIComponent(movieTitle)}&apikey=${apiKey}`;
 
@@ -28,13 +39,5 @@ function fetchIMDbID() {
         });
 }
 
-function copyText() {
-    var resultElement = document.getElementById('result');
-    var range = document.createRange();
-    range.selectNode(resultElement);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-    alert('Text copied to clipboard!');
-}
+
+

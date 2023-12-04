@@ -10,16 +10,20 @@
     <label for="movieIdInput">Enter Movie ID:</label>
     <input type="text" id="movieIdInput" placeholder="Enter movie ID">
 
-    <button onclick="redirectToMovie()">Go to Movie</button>
+    <button onclick="redirectToMovie()">Go to Movie</button><br><br>
+    
+    <label for="tvIdInput">Enter TV ID:</label>
+    <input type="text" id="tvIdInput" placeholder="Enter tv ID">
+
+    <button onclick="redirectToTv()">Go to tv</button>
 
     <h4>IMDb ID Fetcher</h4>
     
     <label for="movieTitle">Enter Movie Title: </label>
     <input type="text" id="movieTitle" placeholder="e.g., Cars">
-    <button onclick="fetchIMDbID()">Fetch IMDb ID</button>
+    <button onclick="fetchIMDbID()">Get IMDb ID</button>
 
-    <div id="result"></div><br>
-    <button onclick="copyText()">Copy Text</button>
+    <div id="result" class="center"></div>
 
     <div class="header">
         
