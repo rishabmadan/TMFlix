@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="movieIdInput">Enter Movie ID:</label>
-    <input type="text" id="movieIdInput" placeholder="Enter movie ID">
+    <div class="container">
+        <h1>TMFlix</h1>
 
-    <button onclick="redirectToMovie()">Go to Movie</button><br><br>
-    
-    <label for="tvIdInput">Enter TV ID:</label>
-    <input type="text" id="tvIdInput" placeholder="Enter tv ID">
+        <div class="input-group">
+            <label for="movieIdInput">Enter Movie name:</label>
+            <input type="text" id="movieIdInput" placeholder="Enter movie name">
+            <button onclick="redirectToMovie()">Go to Movie</button>
+        </div>
 
-    <button onclick="redirectToTv()">Go to tv</button>
+        <div class="input-group">
+            <label for="tvIdInput">Enter TV name:</label>
+            <input type="text" id="tvIdInput" placeholder="Enter TV name">
+            <button onclick="redirectToTv()">Go to TV</button>
+        </div>
 
-    <div id="result" class="center"></div>
-
-    <div class="header">
-        
+        <div id="result"></div>
     </div>
 
     <script src="main.js"></script>

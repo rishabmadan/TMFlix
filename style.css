@@ -1,60 +1,69 @@
-body, h1, h2, h3, p, ul, li {
-   margin: 0;
-   padding: 0;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg2.jpg);
 }
 
-body {
-   font-family: 'Arial', sans-serif;
-   background-color: #f0f0f0;
-   padding: 20px;
-   text-align: center;
-   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.jpg);
-   background-size: cover;
-   background-position: center;
-   color: white;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(211, 70, 70);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 label {
-   display: block;
-   margin-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
 }
 
 input {
-   padding: 8px;
-   margin-bottom: 15px;
-   width: 100%;
-   box-sizing: border-box;
-   background-color: lightgrey;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    font-size: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
 }
 
 button {
-   padding: 10px;
-   cursor: pointer;
-   background-color: #3498db;
-   color: #fff;
-   border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(222, 64, 64);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-   background-color: #2980b9;
+    background-color: #2980b9;
 }
 
 #result {
-   margin-top: 20px;
-   padding: 10px;
-   background-color: lightgrey;
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   color: black;
-   width: 25%;
-   
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
-
-.center {
-   border: 5px solid;
-   margin: auto;
-   width: 50%;
-   padding: 10px;
- }
-
-
