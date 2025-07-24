@@ -10,7 +10,7 @@ function redirectToTv() {
     fetchIMDbID(movieTitle, 'tv');
 }
 
-const omdbkey = '44991e20';
+const omdbkey = '7423c9bb';
 
 function fetchIMDbID(title, type) {
     const apiKey = omdbkey;
