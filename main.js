@@ -38,14 +38,14 @@ function fetchIMDbID(title, type) {
 }
 
 function redirectToMovieById(movieId) {
-    const movieUrlTemplate = 'https://vidsrc.to/embed/movie/{id}';
+    const movieUrlTemplate = 'https://vidsrc.in/embed/movie/{id}';
     const movieUrl = movieUrlTemplate.replace('{id}', movieId);
 
     window.open(movieUrl, '_blank');
 }
 
 function redirectToTvById(tvId) {
-    const tvUrlTemplate = 'https://vidsrc.to/embed/tv/{id}';
+    const tvUrlTemplate = 'https://vidsrc.in/embed/tv/{id}';
     const tvUrl = tvUrlTemplate.replace('{id}', tvId);
 
     window.open(tvUrl, '_blank');
